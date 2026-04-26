@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poemas para mi princesa</title>
+  <link rel="stylesheet" href="poemas.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero__badge">Para mi princesa</div>
+      <h1>Recuerdos de amor en versos</h1>
+      <p class="hero__subtitle">Un rincón especial lleno de poemas creados para ti.</p>
+      <div class="hero__credit">Creado por <strong>Diego Torres</strong></div>
+    </header>
+
+    <section class="poem-grid">
+      <article class="poem-card" data-poem-id="1">
+        <div class="poem-card__title">Eres mi sol</div>
+        <p class="poem-card__preview">Eres la aurora que llega sin ruido, el calor que vuelve cada latido...</p>
+      </article>
+
+      <article class="poem-card" data-poem-id="2">
+        <div class="poem-card__title">En cada latido</div>
+        <p class="poem-card__preview">Cada segundo junto a ti guarda un poema, una promesa, un suspiro.</p>
+      </article>
+
+      <article class="poem-card" data-poem-id="3">
+        <div class="poem-card__title">Siempre a tu lado</div>
+        <p class="poem-card__preview">Camino hacia tus ojos, y en tu mirada encuentro mi hogar.</p>
+      </article>
+    </section>
+  </div>
+
+  <div class="modal-overlay hidden" id="poemModal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" id="closeModal" aria-label="Cerrar poema">×</button>
+      <h2 id="modalTitle"></h2>
+      <div class="modal__content" id="modalText"></div>
+    </div>
+  </div>
+
+  <script src="poemas.js"></script>
+</body>
+</html>
